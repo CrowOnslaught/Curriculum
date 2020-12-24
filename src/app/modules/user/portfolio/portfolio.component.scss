@@ -13,10 +13,12 @@
     {
       background-color: $postBGcolor;
       border-radius: 8px;
-      text-align: center;
+      text-align: justify;
 
       width: 774px;
       padding: 20px;
+
+      margin-bottom: 20px;
 
       >video
       {
@@ -30,6 +32,23 @@
       {
         font-size: 2.5em;
         margin-bottom: 20px;
+        text-align: center;
+      }
+      >p
+      {
+        white-space: pre-line;
+        margin: 0px 80px;
+
+        &:first-of-type
+        {
+          text-align: right;
+          margin-right: 40px;
+          margin-bottom: 10px;
+        }
+      }
+      >a
+      {
+        margin-left: 20px;
       }
     }
 }

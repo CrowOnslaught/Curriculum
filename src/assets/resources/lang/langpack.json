@@ -367,5 +367,78 @@
       "ESP": "Un proyecto que realicé en mi último año de la carrera de diseño y producción de videojuegos, donde desarrollé por completo tanto el cliente (Unity & C #) como el servidor (C # & SQLite para la base de datos) de un juego de parchís multijugador simple pero funcional para dispositivos Android.",
       "CAT": "Un projecte que vaig realitzar en el meu últim any de la carrera de disseny i producció de videojocs, on vaig desenvolupar per complet tant el client (Unity & C #) com el servidor (C # & SQLite per a la base de dades) d'un joc de parxís multijugador simple però funcional per a dispositius Android."
     }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text43",
+      "ENG": "\"ROL\" a die - Android project",
+      "ESP": "\"ROL\" a die - Projecto con Android",
+      "CAT": "\"ROL\" a die - Projecte amb Android"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text44",
+      "ENG": "A small android project made with Unity to test my skills of porting to a mobile device. All assets are borrowed from Unity Asset Store or Google images.",
+      "ESP": "Un pequeño proyecto de Android hecho con Unity para poner a prueba mis habilidades de porting a un dispositivo móvil. Todos los assets son prerstados de Unity Asset Store o Google Images.",
+      "CAT": "Un petit projecte Android realitzat amb Unity per provar les meves habilitats de porting a un dispositiu mòbil. Tots els assetssón de préstec de Unity Asset Store o de Google Images."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text45",
+      "ENG": "CODE: \"R0GU3\" - Release Preview",
+      "ESP": "CODE: \"R0GU3\" - Release Preview",
+      "CAT": "CODE: \"R0GU3\" - Release Preview"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text46",
+      "ENG": "After ten long weeks of developing, our team, Stuxnet, finally finished and shipped the gold release of our final year project: <<Code:\"R0GU3\">>. From our third year of our degree, game desing and developing in TCM Mataró. \n\nCode:\"R0GU3\" is a stealth game developed in UnrealEngine 4 using fully blueprint. Also is a short 10 minutes demo build. \n\nSpecial thanks to all the teachers who helped us and to my friendly partners of stuxnet who make those 3 months an incredible experience.\n\nHope you enjoy this trailer as I did developing this game!",
+      "ESP": "Un pequeño proyecto de Android hecho con Unity para poner a prueba mis habilidades de porting a un dispositivo móvil. Todos los assets son prerstados de Unity Asset Store o Google Images.",
+      "CAT": "Un petit projecte Android realitzat amb Unity per provar les meves habilitats de porting a un dispositiu mòbil. Tots els assetssón de préstec de Unity Asset Store o de Google Images."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text47",
+      "ENG": "Download the Demo HERE",
+      "ESP": "Descarga la Demo AQUI",
+      "CAT": "Descarrega la Demo AQUI"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text48",
+      "ENG": "The Continuum's Seal - Release Preview",
+      "ESP": "The Continuum's Seal - Release Preview",
+      "CAT": "The Continuum's Seal - Release Preview"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text49",
+      "ENG": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the previous year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art",
+      "ESP": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the last year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art",
+      "CAT": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the last year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text50",
+      "ENG": "The Continuum's Seal - Release Preview",
+      "ESP": "The Continuum's Seal - Release Preview",
+      "CAT": "The Continuum's Seal - Release Preview"
+    }
   }
+
 ]
