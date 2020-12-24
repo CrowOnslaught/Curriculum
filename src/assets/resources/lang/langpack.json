@@ -1,0 +1,371 @@
+[
+  {
+    "lang_key":
+    {
+      "id":"text01",
+      "ENG": "Web & Game Developer",
+      "ESP": "Desarrollador Web y de Videojuegos",
+      "CAT": "Desenvolupador Web i de Videojocs"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text02",
+      "ENG": "A fan of video games, rock, manga and card games (TCG's), it motivates me to get involved in projects and feel integrated into them and in the team. I consider myself a calm person who thinks calmly and logically, although I find it difficult to make decisions when I am alone.",
+      "ESP": "Fan de los videojuegos, el rock, el manga y los juegos de cartas (TCG's), me motiva implicarme en proyectos, sentirme integrado en ellos y en el equipo. Me considero una persona tranquila que piensa de forma calmada y lógica, aunque me cuesta tomar decisiones cuando estoy solo.",
+      "CAT": "Fan dels videojocs, el rock, el manga i els jocs de cartes (TCG's), em motiva implicar-me en projectes i sentir-me integrat en ells i en l'equip. Em considero una persona tranquil·la que pensa de forma calmada i lògica, encara que em costa prendre decisions quan estic sol."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text03",
+      "ENG": "TECH SKILLS",
+      "ESP": "HABILIDADES TÉCNICAS",
+      "CAT": "HABILITATS TÈCNIQUES"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text04",
+      "ENG": "Developing Languages:",
+      "ESP": "Lenguajes de programación:",
+      "CAT": "Llenguatges de programació:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text05",
+      "ENG": "Softwares:",
+      "ESP": "Programas:",
+      "CAT": "Programes:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text06",
+      "ENG": "Game Engines:",
+      "ESP": "Motores de juego:",
+      "CAT": "Motors de joc:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text07",
+      "ENG": "SOFT SKILLS",
+      "ESP": "COMPETENCIAS",
+      "CAT": "COMPETÈNCIES"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text08",
+      "ENG": "Mathematical reasoning",
+      "ESP": "Razonamiento matemático",
+      "CAT": "Raonament matemàtic"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text09",
+      "ENG": "Analysis and resolution of problems",
+      "ESP": "Análisis y resolución de problemas",
+      "CAT": "Anàlisi i resolució de problemes"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text10",
+      "ENG": "Technology orientation",
+      "ESP": "Orientación a la tecnología",
+      "CAT": "Orientació a la tecnologia"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text11",
+      "ENG": "Motivation",
+      "ESP": "Motivación",
+      "CAT": "Motivació"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text12",
+      "ENG": "Interest in learning",
+      "ESP": "Interés en aprender",
+      "CAT": "Interès per aprendre"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text13",
+      "ENG": "Self-control",
+      "ESP": "Autocontrol",
+      "CAT": "Autocontrol"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text14",
+      "ENG": "PROFESSIONAL EXPERIENCE",
+      "ESP": "EXPERIENCIA PROFESIONAL",
+      "CAT": "EXPERIÈNCIA PROFESSIONAL"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text15",
+      "ENG": "Junior Game Developer:",
+      "ESP": "Desarrollador junior de videojuegos:",
+      "CAT": "Desenvolupador junior de videojocs:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text16",
+      "ENG": "Game Developing using Unity Engine & C#",
+      "ESP": "Programación de videojuegos utilizando Unity Engine y C#",
+      "CAT": "Programació de videojocs utilitzant Unity Engine i C#"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text17",
+      "ENG": "Gameplay & Client Developing.",
+      "ESP": "Desarrollo de Gameplay y cliente.",
+      "CAT": "Desenvolupament de Gameplay i client."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text19",
+      "ENG": "Programming Teacher:",
+      "ESP": "Profesor de programación:",
+      "CAT": "Professor de programació:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text20",
+      "ENG":"Teacher of extracurricular classes of primary oriented to video games.",
+      "ESP": "Profesor de clases extraescolares de primaria orientadas a videojuegos.",
+      "CAT": "Professor de classes extraescolars de primària orientades a videojocs"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text21",
+      "ENG": "Pla de l'abella school",
+      "ESP": "Escuela Pla de l'abella",
+      "CAT": "Escola Pla de l'abella"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text22",
+      "ENG": "ACADEMIC TRAINING",
+      "ESP": "ESTUDIOS",
+      "CAT": "ESTUDIS"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text23",
+      "ENG": "FrontEnd Developing BootCamp [490h]",
+      "ESP": "Curso de Programación FrontEnd [490h]",
+      "CAT": "Curs de Programació FrontEnd [490h]"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text24",
+      "ENG": "Bit Academy, Barcelona, Spain",
+      "ESP": "Academia Bit, Barcelona, España",
+      "CAT": "Academia Bit, Barcelona, Espanya"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text25",
+      "ENG": "Videogame Design & Production Degree",
+      "ESP": "Diseño y Producción de Videojuegos",
+      "CAT":  "Disseny i Producció de Videojocs"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text26",
+      "ENG": "TecnoCampus, Mataró, Spain.",
+      "ESP": "TecnoCampus, Mataró, España.",
+      "CAT": "TecnoCampus, Mataró, Espanya."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text27",
+      "ENG": "Technological High School",
+      "ESP": "Bachillerato Tecnológico",
+      "CAT": "Batxillerat Tecnològic"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text28",
+      "ENG": "IES Enric Borras, Badalona, Spain",
+      "ESP": "IES Enric Borràs, Badalona, España",
+      "CAT": "IES Enric Borràs, Badalona, Espanya"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text29",
+      "ENG": "LANGUAGES",
+      "ESP": "IDIOMAS",
+      "CAT": "IDIOMES"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text30",
+      "ENG": "Spanish:",
+      "ESP": "Español:",
+      "CAT": "Espanyol:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text31",
+      "ENG": "Native",
+      "ESP": "Nativo",
+      "CAT": "Natiu"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text32",
+      "ENG": "Catalan:",
+      "ESP": "Catalán:",
+      "CAT": "Català:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text33",
+      "ENG": "English:",
+      "ESP": "Inglés:",
+      "CAT": "Anglès:"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text34",
+      "ENG": "B2 Level by TecnoCampus",
+      "ESP": "Nivel B2 por TecnoCampus",
+      "CAT": "Nivell B2 per TecnoCampus"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text35",
+      "ENG": "CONTACT",
+      "ESP": "CONTACTO",
+      "CAT": "CONTACTE"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text36",
+      "ENG": "Cv",
+      "ESP": "Cv",
+      "CAT": "Cv"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text37",
+      "ENG": "Portfolio",
+      "ESP": "Portfolio",
+      "CAT": "Portafolis"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text38",
+      "ENG": "Download",
+      "ESP": "Descargar",
+      "CAT": "Descarregar"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text39",
+      "ENG": "Languages",
+      "ESP": "Idiomas",
+      "CAT": "Idiomes"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text40",
+      "ENG": "Hide",
+      "ESP": "Ocultar",
+      "CAT": "Amagar"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text41",
+      "ENG": "Ludo - Android Project",
+      "ESP": "Parchís - Projecto con Android",
+      "CAT": "Parxís - Projecte amb Android"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text42",
+      "ENG": "A project I did in my last year of video game's design and production degree, where I fully developed both the client (Unity & C#) and server (C# & SQLite for the database) of a simple but functional multiplayer Ludo game for Android devices.",
+      "ESP": "Un proyecto que realicé en mi último año de la carrera de diseño y producción de videojuegos, donde desarrollé por completo tanto el cliente (Unity & C #) como el servidor (C # & SQLite para la base de datos) de un juego de parchís multijugador simple pero funcional para dispositivos Android.",
+      "CAT": "Un projecte que vaig realitzar en el meu últim any de la carrera de disseny i producció de videojocs, on vaig desenvolupar per complet tant el client (Unity & C #) com el servidor (C # & SQLite per a la base de dades) d'un joc de parxís multijugador simple però funcional per a dispositius Android."
+    }
+  }
+]

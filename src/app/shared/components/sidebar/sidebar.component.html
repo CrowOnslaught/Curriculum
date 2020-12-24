@@ -1,0 +1,49 @@
+
+  <mat-sidenav-container  class="sidenav" fullscreen>
+    <mat-sidenav *ngIf='!hideMenu' #snav mode='side' opened>
+      <app-smooth-width [trigger]='isMenuOpen'>
+        <mat-nav-list>
+          <button class="toolButton" id='toggleButton' mat-icon-button (click)="onToolbarMenuToogle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <a class="sidenavItem" id='{{nav.name}}Button' mat-list-item [routerLink]="nav.route" *ngFor="let nav of fillerNav">
+            <mat-icon class='nav-icon'>{{nav.icon}}</mat-icon>
+            <span  *ngIf="isMenuOpen">
+              {{getTranslationByID(nav.name)}}
+            </span>
+          </a>
+          <button class='toolButton' id='downloadButton'  mat-button [matMenuTriggerFor]='download'>
+            <mat-icon class='nav-icon'>cloud_download</mat-icon>
+            <span  *ngIf="isMenuOpen">
+              {{getTranslationByID('38')}}
+            </span>
+          </button>
+          <mat-menu #download>
+            <button mat-menu-item (click)="downloadCv('ENG')">ENG</button>
+            <button mat-menu-item (click)="downloadCv('ESP')">ESP</button>
+            <button mat-menu-item (click)="downloadCv('CAT')">CAT</button>
+          </mat-menu>
+          <button class='toolButton'  id='languagesButton' mat-button [matMenuTriggerFor]='langs'>
+            <mat-icon class='nav-icon'>language</mat-icon>
+            <span  *ngIf="isMenuOpen">
+              {{getTranslationByID('39')}}
+            </span>
+          </button>
+          <mat-menu #langs>
+            <button mat-menu-item (click)="changeLanguage('ENG')">ENG</button>
+            <button mat-menu-item (click)="changeLanguage('ESP')">ESP</button>
+            <button mat-menu-item (click)="changeLanguage('CAT')">CAT</button>
+          </mat-menu>
+          <button class='toolButton' id='hideButton' mat-button (click)='toogleHideToolBar()'>
+            <mat-icon class='nav-icon'>visibility_off</mat-icon>
+            <span  *ngIf="isMenuOpen">
+              {{getTranslationByID('40')}}
+            </span>
+          </button>
+        </mat-nav-list>
+      </app-smooth-width>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

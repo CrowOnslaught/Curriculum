@@ -1,0 +1,249 @@
+@import "../../../shared/variables";
+@import "../../../shared/reset";
+
+.body
+{
+    height: 1100px;
+    max-width: 794px;
+
+    font-size: 1em;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0;
+
+    display:grid;
+    gap: 1%;
+    grid-template-rows: 20% 65% 10%;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d";
+
+    >header
+    {
+        grid-area: a;
+        background-color:$postBGcolor;
+        border-radius: 8px;
+
+        >div
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: justify;
+
+            height: 90%;
+            >img
+            {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            >div
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-right: 20px;
+                >h1
+                {
+                  font-weight: bold;
+                }
+            }
+        }
+    }
+    >main, >aside
+    {
+        width: 392px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        p.subtitle
+        {
+            margin-left: 15px;
+            font-weight: bold;
+            color: $primaryColor;
+            font-size: 18px;
+        }
+    }
+    >main
+    {
+        grid-area: b;
+
+        >div#tech
+        {
+            height:507px;
+        }
+        >div#soft
+        {
+            height: 198px;
+        }
+    }
+    >aside
+    {
+        grid-area: c;
+        >div#experience
+        {
+            height:390px;
+        }
+        >div#training
+        {
+            height: 315px;
+        }
+    }
+    div.post
+    {
+        width:392px;
+        height: fit-content;
+        background-color:$postBGcolor;
+        border-radius: 8px;
+
+        >div.postTitle
+        {
+            display: flex;
+            margin-bottom: 10px;
+
+            >h3
+            {
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 1.2em;
+              color: $secondaryColor;
+              background-color: $primaryColor;
+              border-radius: 8px 0 0 0;
+              width: 40%;
+              padding-left: 10px;
+            }
+            >div
+            {
+                width: 60%;
+                height: auto;
+                border-bottom: solid 2px $primaryColor;
+            }
+        }
+
+        div.devLang
+        {
+            display: flex;
+            margin:10px;
+            margin-bottom: 20px;
+            justify-content: space-around;
+
+            >div.logoBox
+            {
+                text-align: center;
+                >img
+                {
+                    width: auto;
+                    height: 50px;
+                }
+                p
+                {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &#soft
+        {
+            >div:last-child
+            {
+
+            }
+        }
+
+        &#experience, &#training
+        {
+            >div:not(.postTitle)
+            {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                p.year
+                {
+                    align-self:center;
+                    background-color: $primaryColor;
+                    color:$secondaryColor;
+                    font-weight: bold;
+                    width: fit-content;
+                    padding: 1px 20px 1px 20px;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                }
+                p.year:first-of-type
+                {margin-top: 7px;}
+            }
+        }
+        &#training
+        {
+            text-align: center;
+            >div
+            {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    >footer
+    {
+        grid-area: d;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-around;
+
+        ul
+        {
+            padding-bottom: 10px;
+        }
+    }
+
+    @media (max-width:  900px)
+    {
+        grid-template-rows: 30% 65% 65% 20%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+
+        width: 600px;
+        max-width: auto;
+
+        >header
+        {
+            padding: 0;
+
+            >select
+            {
+                left: 89.5%;
+            }
+            div
+            {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        >header, >main, >aside, >footer, div.post
+        {
+            width: 600px;
+        }
+        >footer
+        {
+
+            display: inline;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+@import "./variables";
+//reset styles
+h1,h2,h3,p
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:visited
+{
+
+    color: $secondaryColor;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+p
+{
+  color:$secondaryColor;
+}
+b, strong, h1, h2, h3, li
+{
+    color:$primaryColor;
+}
+//
