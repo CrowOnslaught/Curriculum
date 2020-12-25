@@ -48,9 +48,9 @@
     "lang_key":
     {
       "id":"text06",
-      "ENG": "Game Engines:",
-      "ESP": "Motores de juego:",
-      "CAT": "Motors de joc:"
+      "ENG": "Frameworks:",
+      "ESP": "Entornos de trabajo:",
+      "CAT": "Entorn de treball:"
     }
   },
   {
@@ -382,8 +382,8 @@
     {
       "id":"text44",
       "ENG": "A small android project made with Unity to test my skills of porting to a mobile device. All assets are borrowed from Unity Asset Store or Google images.",
-      "ESP": "Un pequeño proyecto de Android hecho con Unity para poner a prueba mis habilidades de porting a un dispositivo móvil. Todos los assets son prerstados de Unity Asset Store o Google Images.",
-      "CAT": "Un petit projecte Android realitzat amb Unity per provar les meves habilitats de porting a un dispositiu mòbil. Tots els assetssón de préstec de Unity Asset Store o de Google Images."
+      "ESP": "Un pequeño proyecto de Android hecho con Unity para poner a prueba mis habilidades de porting a un dispositivo móvil. Todos los assets son prestados de Unity Asset Store o Google Images.",
+      "CAT": "Un petit projecte Android realitzat amb Unity per provar les meves habilitats de porting a un dispositiu mòbil. Tots els assets són de préstec de Unity Asset Store o de Google Images."
     }
   },
   {
@@ -399,9 +399,9 @@
     "lang_key":
     {
       "id":"text46",
-      "ENG": "After ten long weeks of developing, our team, Stuxnet, finally finished and shipped the gold release of our final year project: <<Code:\"R0GU3\">>. From our third year of our degree, game desing and developing in TCM Mataró. \n\nCode:\"R0GU3\" is a stealth game developed in UnrealEngine 4 using fully blueprint. Also is a short 10 minutes demo build. \n\nSpecial thanks to all the teachers who helped us and to my friendly partners of stuxnet who make those 3 months an incredible experience.\n\nHope you enjoy this trailer as I did developing this game!",
-      "ESP": "Un pequeño proyecto de Android hecho con Unity para poner a prueba mis habilidades de porting a un dispositivo móvil. Todos los assets son prerstados de Unity Asset Store o Google Images.",
-      "CAT": "Un petit projecte Android realitzat amb Unity per provar les meves habilitats de porting a un dispositiu mòbil. Tots els assetssón de préstec de Unity Asset Store o de Google Images."
+      "ENG": "After ten long weeks of development, our team, Stuxnet, finally finished our final year project, << Code: \"R0GU3\" >>, of our third year of career, game design and development at TCM Mataró.\n\nCode: \"R0GU3\" is a stealth game developed in UnrealEngine4 entirely on Blueprint. There is also a short 10 minute demo.\n\nA special thanks to all the teachers who helped us and to my nice fellow Stuxnet colleagues who made those 3 months an incredible experience.",
+      "ESP": "Después de diez largas semanas de desarrollo, nuestro equipo, Stuxnet, finalmente terminó nuestro proyecto de último año, << Code: \"R0GU3\" >>, de nuestro tercer año de carrera, diseño y desarrollo de juegos en TCM Mataró.\n\nCode: \"R0GU3\" es un juego de sigilo desarrollado en UnrealEngine4 completamente en Blueprint. También hay una breve demo de 10 minutos.\n\nUn agradecimiento especial a todos los profesores que nos ayudaron y a mis simpáticos compañeros de Stuxnet que hicieron de esos 3 meses una experiencia increíble.",
+      "CAT": "Després de deu llargues setmanes de desenvolupament, el nostre equip, Stuxnet, finalment va acabar el nostre projecte d'últim any, << Code: \"R0GU3\" >>, del nostre tercer any de carrera, disseny i desenvolupament de jocs en TCM Mataró.\n\nCode: \"R0GU3\" és un joc de sigil desenvolupat en UnrealEngine4 completament en Blueprint. També hi ha una breu demo de 10 minuts.\n\nUn agraïment especial a tots els professors que ens van ajudar i als meus simpàtics companys de Stuxnet que van fer d'aquests 3 mesos una experiència increïble."
     }
   },
   {
@@ -426,27 +426,27 @@
     "lang_key":
     {
       "id":"text49",
-      "ENG": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the previous year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art",
-      "ESP": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the last year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art",
-      "CAT": "Done at the end of my second year of my degree, working as the programmer using Unity a better way than the last year. I'm really happy of this project. \n\n Special thanks to Borja Urquidi for the game desing and Laia Juhé for the great art"
+      "ENG": "Done at the end of my second year of my career in videogame design and production, I worked as a developer using Unity as the game engine and C# as the programming language.\n\nA special thanks to Borja Urquidi for the game design and to Laia Juhé for that great art.",
+      "ESP": "Hecho al final de mi segundo año de mi carrera en diseño y producción de videojuegos, trabajé como desarrollador utilizando Unity como motor de juego y C# como lenguaje de programación.\n\nUn agradecimiento especial a Borja Urquidi por el diseño del juego y a Laia Juhé por ese gran arte.",
+      "CAT": "Fet a el final del meu segon any de la meva carrera en disseny i producció de videojocs, vaig treballar com a desenvolupador utilitzant Unity com a motor de joc i C# com a llenguatge de programació.\n\nUn agraïment especial a Borja Urquidi pel disseny de el joc ja Laia Juhé pel gran art."
     }
   },
   {
     "lang_key":
     {
       "id":"text50",
-      "ENG": "The Continuum's Seal - Release Preview",
-      "ESP": "The Continuum's Seal - Release Preview",
-      "CAT": "The Continuum's Seal - Release Preview"
+      "ENG": "\"Rise of Titans\" is an online multiplayer strategy and card game, with Free-To-Play model monetization, available on Steam and developed by GiantFox.\n\nI started working at GiantFox before finishing my degree in Video Game Design and Production, with an internship contract, which later rose to Junior Developer until I ended up as the main Unity programmer for that project, since I ended up being the only one in charge of developing the videogame.\n\nI spent more than a year working at GiantFox, of which the last six months I was the sole developer of Unity. With my little professional experience, I had to learn to find a way to make the project progress according to what was agreed in the plans. And although it was not in the most optimal way, we all managed to make the game progress properly and meet the requirements to be published on Steam.\n\nThis is the biggest project I have ever worked on and I have learned a lot working on Rise of Titans, both professionally and personally.",
+      "ESP": "\"Rise of Titans\" es un juego de cartas y estrategia multijugador online, con monetización de modelo Free-To-Play, disponible en Steam y desarrollado por GiantFox.\n\nEmpecé a trabajar en GiantFox antes de acabar la carrera de Diseño y producción de videojuegos, con un contrato de prácticas, que luego ascendió a Desarrollador Junior hasta acabar como el programador de Unity principal de ese proyecto, ya que acabé siendo el único encargado de desarrollar el videojuego.\n\nEstuve más de un año trabajando en GiantFox, cuyos últimos seis meses fui el único desarrollador de Unity. Con mi poca experiencia profesional, tuve que aprender a encontrar la forma de hacer que el proyecto avanzara de acuerdo a lo acordado en los planes. Y aunque no fue de la forma más óptima, conseguimos entre todos hacer que el videojuego progresara adecuadamente y cumpliera con los requisitos para ser publicado en Steam.\n\nEste es el proyecto más grande en el que he trabajado y he aprendido muchísimo trabajando en Rise of Titans, tanto profesionalmente como personalmente.",
+      "CAT": "\"Rise of Titans\" és un joc de cartes i estratègia multijugador en línia, amb monetització de model Free-To-Play, disponible en Steam i desenvolupat per GiantFox.\n\nVaig començar a treballar en GiantFox abans d'acabar la carrera de Disseny i producció de videojocs, amb un contracte de pràctiques, que després va pujar a Desenvolupador Junior fins a acabar com el programador d'Unity principal d'aquest projecte, ja que vaig acabar sent l'únic encarregat de desenvolupar el videojoc.\n\nAquest és el projecte més gran en el que he treballat i he après moltíssim treballant en Rise of Titans, tant professionalment com personalment."
     }
   },
   {
     "lang_key":
     {
       "id":"text51",
-      "ENG": "Open in Steam page HERE",
-      "ESP": "Abrir en la página de Steam AQUI",
-      "CAT": "Obrir a la pàgina d'Steam AQUI"
+      "ENG": "See it on Steam page HERE",
+      "ESP": "Verlo en la página de Steam AQUÍ",
+      "CAT": "Veure-ho a la pàgina d'Steam AQUÍ"
     }
   }
 
