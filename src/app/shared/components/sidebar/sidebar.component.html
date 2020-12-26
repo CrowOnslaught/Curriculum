@@ -34,7 +34,7 @@
             <button mat-menu-item (click)="changeLanguage('ESP')">ESP</button>
             <button mat-menu-item (click)="changeLanguage('CAT')">CAT</button>
           </mat-menu>
-          <button class='toolButton' id='hideButton' mat-button (click)='toogleHideToolBar()'>
+          <button *ngIf='showHideMenuEye' class='toolButton' id='hideButton' mat-button (click)='toogleHideToolBar()'>
             <mat-icon class='nav-icon'>visibility_off</mat-icon>
             <span  *ngIf="isMenuOpen">
               {{getTranslationByID('40')}}

@@ -209,15 +209,16 @@
 
     @media (max-width:  900px)
     {
-        grid-template-rows: 30% 65% 65% 20%;
-        grid-template-columns: 100%;
-        grid-template-areas:
+
+      grid-template-rows: 30% 65% 65% 20%;
+      grid-template-columns: 100%;
+      grid-template-areas:
         "a"
         "b"
         "c"
         "d";
 
-        width: 600px;
+        width: 400px;
         max-width: auto;
 
         >header
@@ -233,11 +234,16 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+
+                p
+                {
+                  margin: 0 20px
+                }
             }
         }
         >header, >main, >aside, >footer, div.post
         {
-            width: 600px;
+            width: 400px;
         }
         >footer
         {

@@ -14,8 +14,11 @@ import { TranslatorService } from '../../services/translator.service';
 })
 export class SidebarComponent implements OnInit{
   mobileQuery: MediaQueryList;
-  isMenuOpen : boolean = true;
+  isMenuOpen : boolean = false;
   hideMenu : boolean = false;
+  showHideMenuEye: boolean = true;
+  innerWidth: any;
+
 
   //snackBar
   horizontalPosition: MatSnackBarHorizontalPosition = 'left';
@@ -95,5 +98,14 @@ export class SidebarComponent implements OnInit{
     }
 
     this.ts.ChangeLanguage(l_data);
+
+    this.innerWidth = window.innerWidth;
+    this.showHideMenuEye = this.innerWidth > 900;
+  }
+
+  @HostListener('window:resize', ['$event']) onResize(event)
+  {
+    this.innerWidth = window.innerWidth;
+    this.showHideMenuEye = this.innerWidth > 900;
   }
 }
