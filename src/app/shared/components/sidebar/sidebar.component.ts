@@ -67,7 +67,7 @@ export class SidebarComponent implements OnInit{
     let l_link = document.createElement("a");
 
     l_link.download = "JaumeGarcia_Cv_" + lang + ".pdf";
-    l_link.href =  "../../../../assets/resources/CVs/JaumeGarcia_Cv_" + lang + ".pdf";
+    l_link.href =  "assets/resources/CVs/JaumeGarcia_Cv_" + lang + ".pdf";
     l_link.click();
     l_link.remove();
 
