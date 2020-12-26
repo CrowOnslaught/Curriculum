@@ -8,6 +8,7 @@ import { TranslatorService } from 'src/app/shared/services/translator.service';
   styleUrls: ['./cv.component.scss']
 })
 export class CvComponent {
+  title='assadsa';
 
   constructor(private ts : TranslatorService) { }
 
