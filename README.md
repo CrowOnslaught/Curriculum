@@ -1,7 +1,7 @@
 # Resume
 
 Web repository of my own resume done completely by me using Angular.
-Link to GH-page: https://crowonslaught.github.io/angular-CV/
+Link to GH-page: https://crowonslaught.github.io/Curriculum/
 
 # CvAngular
 
@@ -29,7 +29,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Build Gh-Page
 
-Run `ng build --prod --output-path docs --base-href /angular-CV/` to create build in `docs/`.
+Run `ng build --prod --output-path docs --base-href /Curriculum/` to create build in `docs/`.
 Duplicate `docs/index.html` and rename to `docs/404.html`.
 Add, Commit & Push
 
