@@ -54,36 +54,39 @@ export class SidebarComponent implements OnInit{
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  onToogleDarkMode()
-  {
-    this.lightMode = !this.lightMode;
+  //#region Light Theme
+    onToogleDarkMode()
+    {
+      this.lightMode = !this.lightMode;
+      localStorage.setItem("theme", this.lightMode? 'light':'dark' );
 
-    let r = (document.querySelector(':root') as HTMLElement);
-    let rs = getComputedStyle(r);
+      let r = (document.querySelector(':root') as HTMLElement);
+      let rs = getComputedStyle(r);
 
-    let l_pc = this.lightMode? rs.getPropertyValue('--pc-light') : rs.getPropertyValue('--pc-dark');
-    let l_sc = this.lightMode? rs.getPropertyValue('--sc-light') : rs.getPropertyValue('--sc-dark');
-    let l_pbc = this.lightMode? rs.getPropertyValue('--pbc-light') : rs.getPropertyValue('--pbc-dark');
-    console.log(l_pc+"|"+l_sc+"|"+l_pbc);
+      let l_pc = this.lightMode? rs.getPropertyValue('--pc-light') : rs.getPropertyValue('--pc-dark');
+      let l_sc = this.lightMode? rs.getPropertyValue('--sc-light') : rs.getPropertyValue('--sc-dark');
+      let l_pbc = this.lightMode? rs.getPropertyValue('--pbc-light') : rs.getPropertyValue('--pbc-dark');
 
-    let l_bgImg = this.lightMode? 'none' : "url('../../../../assets/resources/images/bg.jpg')";
-    (document.querySelector('.sidenav') as HTMLElement).style.backgroundImage = l_bgImg;
-
-
-    r.style.setProperty('--primary-color', l_pc);
-    r.style.setProperty('--secondary-color', l_sc);
-    r.style.setProperty('--post-bg-color', l_pbc);
-  }
+      let l_bgImg = this.lightMode? 'none' : "url('assets/resources/images/bg.jpg')";
+      (document.querySelector('.sidenav') as HTMLElement).style.backgroundImage = l_bgImg;
 
 
-  getTranslationByID(id: string) : string
-  {
-    return this.ts.getTranslation(id);
-  }
-  changeLanguage(lang:string)
-  {
-    this.ts.ChangeLanguage(lang);
-  }
+      r.style.setProperty('--primary-color', l_pc);
+      r.style.setProperty('--secondary-color', l_sc);
+      r.style.setProperty('--post-bg-color', l_pbc);
+    }
+  //#endregion
+
+  //#region Translation
+    getTranslationByID(id: string) : string
+    {
+      return this.ts.getTranslation(id);
+    }
+    changeLanguage(lang:string)
+    {
+      this.ts.ChangeLanguage(lang);
+    }
+  //#endregion
 
   downloadCv(lang : string)
   {
@@ -119,6 +122,16 @@ export class SidebarComponent implements OnInit{
     }
 
     this.ts.ChangeLanguage(l_data);
+
+    l_data = localStorage.getItem("theme");
+    if(l_data == null)
+    {
+        l_data = "dark";
+        localStorage.setItem("theme", l_data);
+    }
+
+    if(l_data=='light')
+      this.onToogleDarkMode();
 
     this.innerWidth = window.innerWidth;
     this.showHideMenuEye = this.innerWidth > 900;
