@@ -448,6 +448,24 @@
       "ESP": "Verlo en la página de Steam AQUÍ",
       "CAT": "Veure-ho a la pàgina d'Steam AQUÍ"
     }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text52",
+      "ENG": "This same web application is fully developed by me, from scratch, using Angular as Framework and Github as repository and as page host. It is possible to see all the code, and that of other projects of mine on my repository page of my GitHub account.",
+      "ESP": "Esta misma aplicación web está desarrollada completamente por mí, desde cero, utilizando Angular como Framework y Github como repositorio y como host de la página. Es posible ver todo el código, y el de otros proyectos míos en mi página de repositorios de mi cuenta de GitHub.",
+      "CAT": "Aquesta mateixa aplicació web està desenvolupada completament per mi, des de zero, utilitzant Angular com Framework i Github com a repositori i com host de la pàgina. És possible veure tot el codi, i el d'altres projectes meus a la meva pàgina de repositoris del meu compte de GitHub."
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text53",
+      "ENG": "See repository on GitHub HERE",
+      "ESP": "Ver repositorio en GitHub AQUÍ",
+      "CAT": "Veure el repositori a GitHub AQUÍ"
+    }
   }
 
 ]
