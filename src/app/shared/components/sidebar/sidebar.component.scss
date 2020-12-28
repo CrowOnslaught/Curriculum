@@ -1,9 +1,8 @@
 @import "../../variables";
+@import "../../reset";
 
 
 .sidenav{
-  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-     `<body>` to be our scrolling element for mobile layouts. */
   flex: 1 0 auto;
   background-image: url("../../../../assets/resources/images/bg.jpg");
   background-size: cover;
@@ -11,20 +10,39 @@
 
 mat-sidenav
 {
-  color: LightGoldenRodYellow;
-  background-color: DarkGoldenRod;
+  color:var(--secondary-color);
+  background-color: var(--primary-color);
 
-  mat-nav-list
+  app-smooth-width
   {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    >#downloadButton
+    height: 100%;
+
+    mat-nav-list
     {
-      justify-self: flex-end;
+      height: 100%;
+      .navList
+      {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &#topList
+        {
+          justify-content: flex-start;
+          height: 70%;
+
+        }
+        &#botList
+        {
+          justify-content: flex-end;
+          height: 28%;
+        }
+      }
     }
   }
+
+
 
   #toggleButton
   {
@@ -34,17 +52,24 @@ mat-sidenav
   }
   .sidenavItem
   {
-    color: LightGoldenRodYellow;
+    color:var(--secondary-color);
   }
 
 
   .nav-icon
   {
     margin-right: 10px;
-    color: LightGoldenRodYellow;
+    color: var(--secondary-color);
   }
   .toolButton
   {
     text-align: left;
+  }
+
+  a,button
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
   }
 }

@@ -1,6 +1,4 @@
-import { MediaMatcher } from '@angular/cdk/layout';
-import { flatten } from '@angular/compiler';
-import { ChangeDetectorRef, HostListener, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { HostListener, ViewEncapsulation } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { TranslatorService } from '../../services/translator.service';
@@ -18,7 +16,7 @@ export class SidebarComponent implements OnInit{
   hideMenu : boolean = false;
   showHideMenuEye: boolean = true;
   innerWidth: any;
-
+  lightMode : boolean;
 
   //snackBar
   horizontalPosition: MatSnackBarHorizontalPosition = 'left';
@@ -38,7 +36,7 @@ export class SidebarComponent implements OnInit{
     {name:'37', route:'portfolio',icon:'work'}
   ]
 
-  constructor(private ts : TranslatorService, private sb : MatSnackBar){}
+  constructor(private ts : TranslatorService, private sb : MatSnackBar) {}
 
   toogleHideToolBar()
   {
@@ -55,6 +53,28 @@ export class SidebarComponent implements OnInit{
   {
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  onToogleDarkMode()
+  {
+    this.lightMode = !this.lightMode;
+
+    let r = (document.querySelector(':root') as HTMLElement);
+    let rs = getComputedStyle(r);
+
+    let l_pc = this.lightMode? rs.getPropertyValue('--pc-light') : rs.getPropertyValue('--pc-dark');
+    let l_sc = this.lightMode? rs.getPropertyValue('--sc-light') : rs.getPropertyValue('--sc-dark');
+    let l_pbc = this.lightMode? rs.getPropertyValue('--pbc-light') : rs.getPropertyValue('--pbc-dark');
+    console.log(l_pc+"|"+l_sc+"|"+l_pbc);
+
+    let l_bgImg = this.lightMode? 'none' : "url('../../../../assets/resources/images/bg.jpg')";
+    (document.querySelector('.sidenav') as HTMLElement).style.backgroundImage = l_bgImg;
+
+
+    r.style.setProperty('--primary-color', l_pc);
+    r.style.setProperty('--secondary-color', l_sc);
+    r.style.setProperty('--post-bg-color', l_pbc);
+  }
+
 
   getTranslationByID(id: string) : string
   {
@@ -90,6 +110,7 @@ export class SidebarComponent implements OnInit{
 
   ngOnInit()
   {
+
     let l_data = localStorage.getItem("langPack");
     if(l_data == null)
     {
@@ -102,6 +123,7 @@ export class SidebarComponent implements OnInit{
     this.innerWidth = window.innerWidth;
     this.showHideMenuEye = this.innerWidth > 900;
   }
+
 
   @HostListener('window:resize', ['$event']) onResize(event)
   {

@@ -40,6 +40,6 @@ body { margin: 0; font-family:Arial, Helvetica, sans-serif}
 
 .hidebar, .showbar
 {
-  background-color: $primaryColor;
-  color: $secondaryColor;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }

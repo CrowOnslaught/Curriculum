@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslatorService } from 'src/app/shared/services/translator.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-portfolio',

@@ -1,5 +1,5 @@
 @import "./variables";
-//reset styles
+
 h1,h2,h3,p
 {
   margin: 0;
@@ -10,7 +10,7 @@ h1,h2,h3,p
 a, a:visited
 {
 
-    color: $secondaryColor;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 a:hover
@@ -20,10 +20,9 @@ a:hover
 
 p
 {
-  color:$secondaryColor;
+  color:var(--secondary-color);
 }
 b, strong, h1, h2, h3, li
 {
-    color:$primaryColor;
+    color:var(--primary-color);
 }
-//

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslatorService } from 'src/app/shared/services/translator.service';
 
 
@@ -7,8 +7,7 @@ import { TranslatorService } from 'src/app/shared/services/translator.service';
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.scss']
 })
-export class CvComponent {
-  title='assadsa';
+export class CvComponent{
 
   constructor(private ts : TranslatorService) { }
 

@@ -466,6 +466,15 @@
       "ESP": "Ver repositorio en GitHub AQUÍ",
       "CAT": "Veure el repositori a GitHub AQUÍ"
     }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text54",
+      "ENG": "Theme",
+      "ESP": "Tema",
+      "CAT": "Tema"
+    }
   }
 
 ]
