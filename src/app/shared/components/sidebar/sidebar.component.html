@@ -13,17 +13,12 @@
                 {{getTranslationByID(nav.name)}}
               </span>
             </a>
-            <button class='toolButton' id='downloadButton'  mat-button [matMenuTriggerFor]='download'>
+            <button class='toolButton' id='downloadButton'  mat-button (click)="downloadCv()">
               <mat-icon  class='nav-icon'>cloud_download</mat-icon>
               <span  *ngIf="isMenuOpen">
                 {{getTranslationByID('38')}}
               </span>
             </button>
-            <mat-menu #download>
-              <button mat-menu-item (click)="downloadCv('ENG')">ENG</button>
-              <button mat-menu-item (click)="downloadCv('ESP')">ESP</button>
-              <button mat-menu-item (click)="downloadCv('CAT')">CAT</button>
-            </mat-menu>
           </div>
           <div class="navList" id="botList">
             <button class='toolButton'  id='languagesButton' mat-button [matMenuTriggerFor]='langs'>

@@ -88,12 +88,15 @@ export class SidebarComponent implements OnInit{
     }
   //#endregion
 
-  downloadCv(lang : string)
+  downloadCv()
   {
     let l_link = document.createElement("a");
 
-    l_link.download = "JaumeGarcia_Cv_" + lang + ".pdf";
-    l_link.href =  "assets/resources/CVs/JaumeGarcia_Cv_" + lang + ".pdf";
+    let l_theme = this.lightMode? "lightTheme" : "darkTheme";
+    let l_lang = this.ts.getCurrentLanguage();
+
+    l_link.download = "JaumeGarcia_Cv_" + l_lang + ".pdf";
+    l_link.href =  "assets/resources/CVs/"+ l_theme +"/JaumeGarcia_Cv_" + l_lang + ".pdf";
     l_link.click();
     l_link.remove();
 
@@ -113,7 +116,17 @@ export class SidebarComponent implements OnInit{
 
   ngOnInit()
   {
+    window.onbeforeprint = () => {this.hideMenu = true;};
+    window.onafterprint = () => {this.hideMenu = false;};
 
+    this.getLocalStorageData();
+
+    this.innerWidth = window.innerWidth;
+    this.showHideMenuEye = this.innerWidth > 900;
+  }
+
+  getLocalStorageData()
+  {
     let l_data = localStorage.getItem("langPack");
     if(l_data == null)
     {
@@ -133,10 +146,7 @@ export class SidebarComponent implements OnInit{
     if(l_data=='light')
       this.onToogleDarkMode();
 
-    this.innerWidth = window.innerWidth;
-    this.showHideMenuEye = this.innerWidth > 900;
   }
-
 
   @HostListener('window:resize', ['$event']) onResize(event)
   {

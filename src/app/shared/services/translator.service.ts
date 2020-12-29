@@ -50,6 +50,10 @@ export class TranslatorService {
   {
     this._currentLang = lang;
     localStorage.setItem("langPack", this._currentLang);
+  }
 
+  public getCurrentLanguage() :string
+  {
+    return this._currentLang;
   }
 }
