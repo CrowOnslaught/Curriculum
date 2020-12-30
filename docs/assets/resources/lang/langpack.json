@@ -309,9 +309,9 @@
     "lang_key":
     {
       "id":"text36",
-      "ENG": "Cv",
-      "ESP": "Cv",
-      "CAT": "Cv"
+      "ENG": "Resume",
+      "ESP": "Currículum",
+      "CAT": "Currículum"
     }
   },
   {
@@ -474,6 +474,24 @@
       "ENG": "Theme",
       "ESP": "Tema",
       "CAT": "Tema"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text55",
+      "ENG": "Home",
+      "ESP": "Inicio",
+      "CAT": "Inici"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text56",
+      "ENG": "Music",
+      "ESP": "Música",
+      "CAT": "Música"
     }
   }
 

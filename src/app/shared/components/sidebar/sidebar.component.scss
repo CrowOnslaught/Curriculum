@@ -1,5 +1,5 @@
-@import "../../variables";
-@import "../../reset";
+@import "../../scss/variables";
+@import "../../scss/reset";
 
 .sidenav{
   @media print
@@ -7,15 +7,16 @@
     zoom: 95%;
   }
   flex: 1 0 auto;
-  background-image: url("../../../../assets/resources/images/bg.jpg");
+  background-image: url("/assets/resources/images/bg.jpg");
   background-size: cover;
 }
 
 mat-sidenav
 {
-
-  color:var(--secondary-color);
-  background-color: var(--primary-color);
+  *
+  {
+    color:var(--secondary-color);
+  }
 
   app-smooth-width
   {
@@ -43,11 +44,10 @@ mat-sidenav
           height: 28%;
         }
       }
+
+
     }
   }
-
-
-
   #toggleButton
   {
     width: 100%;
@@ -75,5 +75,31 @@ mat-sidenav
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-decoration: none;
+  }
+}
+
+div.mat-menu-panel
+{
+  border: solid 2px var(--primary-color);
+  background-color: var(--post-bg-color);
+  margin-left: 30px;
+  *
+  {
+    color:var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
+#mat-menu-panel-1
+{
+  >:first-child
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  mat-icon
+  {
+    color:var(--primary-color);
   }
 }

@@ -1,0 +1,14 @@
+:root
+{
+  --pc-dark: DarkGoldenRod;
+  --sc-dark: LightGoldenRodYellow;
+  --pbc-dark: rgba(37, 37, 34, 0.8);
+
+  --pc-light: GoldenRod;
+  --sc-light: Black;
+  --pbc-light: rgba(212, 212, 212, 0.8);
+
+  --primary-color : var(--pc-dark);
+  --secondary-color: var(--sc-dark);
+  --post-bg-color: var(--pbc-dark);
+}

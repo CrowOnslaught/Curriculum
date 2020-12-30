@@ -1,5 +1,5 @@
-@import "../../../shared/variables";
-@import "../../../shared/reset";
+@import "../../../shared/scss/variables";
+@import "../../../shared/scss/reset";
 
 
 .body
@@ -152,14 +152,6 @@
                     font-size: 14px;
                     font-weight: bold;
                 }
-            }
-        }
-
-        &#soft
-        {
-            >div:last-child
-            {
-
             }
         }
 

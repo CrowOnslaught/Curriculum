@@ -1,5 +1,6 @@
 import { HostListener, ViewEncapsulation } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { MatSliderChange } from '@angular/material/slider';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { TranslatorService } from '../../services/translator.service';
 
@@ -7,10 +8,15 @@ import { TranslatorService } from '../../services/translator.service';
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
-  // encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 
 })
 export class SidebarComponent implements OnInit{
+
+  //Background Music
+  bgm = new Audio("/assets/resources/sounds/PYLOT-The Return.mp3")
+  bgm_volume : number;
+
   mobileQuery: MediaQueryList;
   isMenuOpen : boolean = false;
   hideMenu : boolean = false;
@@ -32,6 +38,7 @@ export class SidebarComponent implements OnInit{
 
   fillerNav =
   [
+    {name:'55', route:'home',icon:'home'},
     {name:'36', route:'cv',icon:'account_box'},
     {name:'37', route:'portfolio',icon:'work'}
   ]
@@ -88,6 +95,7 @@ export class SidebarComponent implements OnInit{
     }
   //#endregion
 
+  //#region Download
   downloadCv()
   {
     let l_link = document.createElement("a");
@@ -104,7 +112,10 @@ export class SidebarComponent implements OnInit{
     this.openSnackBar("Starting Donwload", "showbar");
 
   }
+//#endregion
 
+
+//#region SnackBar
   openSnackBar(message: string, className: string){
     this.sb.open(message, '', {
       duration: 2000,
@@ -113,6 +124,7 @@ export class SidebarComponent implements OnInit{
       verticalPosition: this.verticalPosition,
     });
   }
+  //#endregion
 
   ngOnInit()
   {
@@ -120,11 +132,47 @@ export class SidebarComponent implements OnInit{
     window.onafterprint = () => {this.hideMenu = false;};
 
     this.getLocalStorageData();
+    this.playMusic();
 
     this.innerWidth = window.innerWidth;
     this.showHideMenuEye = this.innerWidth > 900;
   }
 
+  //#region  Background Music
+  playMusic()
+  {
+    this.bgm.addEventListener('ended', function()
+    {
+      this.currentTime = 0;
+        this.play();
+    }, false);
+    this.bgm.play();
+    this.bgm.volume = localStorage.getItem("bgm_muted") == 'true'? 0 : this.bgm.volume;
+  }
+  onMuteMusic()
+  {
+    if(this.bgm.volume == 0)
+    {
+      this.bgm.volume = this.bgm_volume;
+      localStorage.setItem('bgm_muted', 'false');
+    }
+    else
+    {
+      this.bgm.volume = 0;
+      localStorage.setItem('bgm_muted', 'true');
+    }
+  }
+  getSliderTickInterval(event : MatSliderChange)
+  {
+    this.bgm_volume = event.value;
+    this.bgm.volume = this.bgm_volume;
+    localStorage.setItem('bgm_volume', String(this.bgm.volume));
+    localStorage.setItem('bgm_muted', String(event.value==0));
+  }
+  //#endregion
+
+
+  //#region LocalStorage
   getLocalStorageData()
   {
     let l_data = localStorage.getItem("langPack");
@@ -146,7 +194,25 @@ export class SidebarComponent implements OnInit{
     if(l_data=='light')
       this.onToogleDarkMode();
 
+    l_data = localStorage.getItem("bgm_volume");
+    if(l_data == null)
+    {
+        l_data = "0.1";
+        localStorage.setItem("bgm_volume", l_data);
+    }
+
+    this.bgm_volume = Number(l_data);
+    this.bgm.volume = this.bgm_volume;
+
+    l_data = localStorage.getItem("bgm_muted");
+    if(l_data == null)
+    {
+        l_data = "true";
+        localStorage.setItem("bgm_muted", l_data);
+    }
   }
+  //#endregion
+
 
   @HostListener('window:resize', ['$event']) onResize(event)
   {

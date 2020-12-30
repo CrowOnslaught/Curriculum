@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './shared/components/home/home.component';
 
 const routes: Routes = [
+  {path:'home', component:HomeComponent },
   {path:'user',  loadChildren: () => import('./modules/user/user.module').then(m => m.UserModule)},
-  {path:'', redirectTo:'users', pathMatch:'full' }
+  {path:'', redirectTo:'home', pathMatch:'full' }
 ];
 
 @NgModule({

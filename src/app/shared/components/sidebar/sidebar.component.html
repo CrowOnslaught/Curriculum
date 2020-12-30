@@ -1,7 +1,7 @@
 
   <mat-sidenav-container  class="sidenav" fullscreen #sidenav>
-    <mat-sidenav *ngIf='!hideMenu' #snav mode='side' opened>
-      <app-smooth-width [trigger]='isMenuOpen'>
+    <mat-sidenav  style='background-color: var(--primary-color);' *ngIf='!hideMenu' #snav mode='side' opened>
+      <app-smooth-width  [trigger]='isMenuOpen'>
         <mat-nav-list>
           <div class="navList" id="topList">
             <button class="toolButton" id='toggleButton' mat-icon-button (click)="onToolbarMenuToogle()">
@@ -28,10 +28,28 @@
               </span>
             </button>
             <mat-menu #langs>
-              <button mat-menu-item (click)="changeLanguage('ENG')">ENG</button>
-              <button mat-menu-item (click)="changeLanguage('ESP')">ESP</button>
-              <button mat-menu-item (click)="changeLanguage('CAT')">CAT</button>
+              <div>
+                <button mat-menu-item (click)="changeLanguage('ENG')">ENG</button>
+                <button mat-menu-item (click)="changeLanguage('ESP')">ESP</button>
+                <button mat-menu-item (click)="changeLanguage('CAT')">CAT</button>
+              </div>
             </mat-menu>
+
+            <button class='toolButton'  id='musicButton' mat-button [matMenuTriggerFor]='audio'>
+              <mat-icon *ngIf='bgm.volume<=0' class='nav-icon'>music_off</mat-icon>
+              <mat-icon *ngIf='bgm.volume>0' class='nav-icon'>music_note</mat-icon>
+              <span  *ngIf="isMenuOpen">
+                {{getTranslationByID('56')}}
+              </span>
+            </button>
+            <mat-menu id='audio' #audio>
+              <mat-slider color='primary' [min]="0" [max]="1" [step]="0.01" [value]='bgm_volume' (input)="getSliderTickInterval($event)"></mat-slider>
+              <button mat-menu-item (click)="onMuteMusic()">
+                <mat-icon *ngIf='bgm.volume<=0' class='nav-icon'>volume_up</mat-icon>
+                <mat-icon *ngIf='bgm.volume>0' class='nav-icon'>volume_off</mat-icon>
+              </button>
+            </mat-menu>
+
             <button class='toolButton' id='themeButton' mat-button (click)='onToogleDarkMode()'>
               <mat-icon *ngIf='lightMode'  class='nav-icon'>dark_mode</mat-icon>
               <mat-icon *ngIf='!lightMode'  class='nav-icon'>light_mode</mat-icon>
@@ -39,6 +57,7 @@
                 {{getTranslationByID('54')}}
               </span>
             </button>
+
             <button *ngIf='showHideMenuEye' class='toolButton' id='hideButton' mat-button (click)='toogleHideToolBar()'>
               <mat-icon class='nav-icon'>visibility_off</mat-icon>
               <span  *ngIf="isMenuOpen">

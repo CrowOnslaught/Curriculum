@@ -1,0 +1,23 @@
+<div class="body">
+  <div>
+    <h1>Welcome to my site!</h1>
+    <h2>Explore about me:</h2>
+    <div class="buttons">
+      <button mat-button routerLink='/cv'>
+        <mat-icon>account_box</mat-icon>
+        <br>
+        <p>CV</p>
+      </button>
+      <button mat-button routerLink='/portfolio'>
+        <mat-icon>work</mat-icon>
+        <br>
+        <p>Portfolio</p>
+      </button>
+      <button mat-button (click)="navigateTo('https://github.com/CrowOnslaught?tab=repositories')">
+        <i _ngcontent-tmn-c269="" class="fab fa-github-square"></i>
+        <br>
+        <p>Github</p>
+      </button>
+    </div>
+  </div>
+</div>

@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material';
 import { UserModule } from './modules/user/user.module';
 import { SmoothWidthComponent } from './shared/components/sidebar/smooth_width.component';
+import { HomeComponent } from './shared/components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    SmoothWidthComponent
+    SmoothWidthComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
