@@ -14,7 +14,7 @@ import { TranslatorService } from '../../services/translator.service';
 export class SidebarComponent implements OnInit{
 
   //Background Music
-  bgm = new Audio("../../../../assets/resources/sounds/PYLOT-The Return.mp3")
+  bgm = new Audio("/assets/resources/sounds/PYLOT-TheReturn.mp3")
   bgm_volume : number;
 
   mobileQuery: MediaQueryList;
