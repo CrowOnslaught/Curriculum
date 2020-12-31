@@ -1,7 +1,7 @@
 # Resume
 
 Web repository of my own resume done completely by me using Angular.
-Link to GH-page: https://crowonslaught.github.io/Curriculum/ or www.jaumegarciaparcerisas.cat
+Link to GH-page: https://crowonslaught.github.io/Curriculum/ or www.jaumegarciacv.cat
 
 # CvAngular
 
