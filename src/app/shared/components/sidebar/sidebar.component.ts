@@ -1,7 +1,9 @@
-import { HostListener, ViewEncapsulation } from '@angular/core';
+import { HostListener, Output, ViewEncapsulation } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatSliderChange } from '@angular/material/slider';
 import { MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
+import { EventEmitter } from 'events';
+import { environment } from 'src/environments/environment';
 import { TranslatorService } from '../../services/translator.service';
 
 @Component({
@@ -22,7 +24,6 @@ export class SidebarComponent implements OnInit{
   hideMenu : boolean = false;
   showHideMenuEye: boolean = true;
   innerWidth: any;
-  lightMode : boolean;
 
   //snackBar
   horizontalPosition: MatSnackBarHorizontalPosition = 'left';
@@ -64,18 +65,22 @@ export class SidebarComponent implements OnInit{
   //#region Light Theme
     onToogleDarkMode()
     {
-      this.lightMode = !this.lightMode;
-      localStorage.setItem("theme", this.lightMode? 'light':'dark' );
+      environment.lightMode = !environment.lightMode;
+      localStorage.setItem("theme", environment.lightMode? 'light':'dark' );
 
       let r = (document.querySelector(':root') as HTMLElement);
       let rs = getComputedStyle(r);
 
-      let l_pc = this.lightMode? rs.getPropertyValue('--pc-light') : rs.getPropertyValue('--pc-dark');
-      let l_sc = this.lightMode? rs.getPropertyValue('--sc-light') : rs.getPropertyValue('--sc-dark');
-      let l_pbc = this.lightMode? rs.getPropertyValue('--pbc-light') : rs.getPropertyValue('--pbc-dark');
+      let l_pc = environment.lightMode? rs.getPropertyValue('--pc-light') : rs.getPropertyValue('--pc-dark');
+      let l_sc = environment.lightMode? rs.getPropertyValue('--sc-light') : rs.getPropertyValue('--sc-dark');
+      let l_pbc = environment.lightMode? rs.getPropertyValue('--pbc-light') : rs.getPropertyValue('--pbc-dark');
 
-      let l_bgImg = this.lightMode? 'none' : "url('assets/resources/images/bg.jpg')";
+      let l_bgImg = environment.lightMode? 'none' : "url('assets/resources/images/backGrounds/bg.jpg')";
       (document.querySelector('.sidenav') as HTMLElement).style.backgroundImage = l_bgImg;
+
+      let l_bg_anim_Img = environment.lightMode? "url('assets/resources/images/backGrounds/bg_anim_L.gif')" : "url('assets/resources/images/backGrounds/bg_anim_D.gif')";
+      let l_homeBoyd_sel = (document.querySelector('.homeBody') as HTMLElement);
+      if(l_homeBoyd_sel != null) l_homeBoyd_sel.style.backgroundImage = l_bg_anim_Img;
 
 
       r.style.setProperty('--primary-color', l_pc);
@@ -100,7 +105,7 @@ export class SidebarComponent implements OnInit{
   {
     let l_link = document.createElement("a");
 
-    let l_theme = this.lightMode? "lightTheme" : "darkTheme";
+    let l_theme = environment.lightMode? "lightTheme" : "darkTheme";
     let l_lang = this.ts.getCurrentLanguage();
 
     l_link.download = "JaumeGarcia_Cv_" + l_lang + ".pdf";

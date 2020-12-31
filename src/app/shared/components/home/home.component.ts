@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { TranslatorService } from '../../services/translator.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void
   {
-
+    let l_bg_anim_Img = environment.lightMode? "url('assets/resources/images/backGrounds/bg_anim_L.gif')" : "url('assets/resources/images/backGrounds/bg_anim_D.gif')";
+    (document.querySelector('.homeBody') as HTMLElement).style.backgroundImage = l_bg_anim_Img;
   }
   getTranslationByID(id: string) : string
   {
