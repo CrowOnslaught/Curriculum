@@ -493,6 +493,24 @@
       "ESP": "Música",
       "CAT": "Música"
     }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text57",
+      "ENG": "Welcome to my site!",
+      "ESP": "Bienvenido a mi página!",
+      "CAT": "¡Benvingut a la meva pàgina!"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text58",
+      "ENG": "Explore more about me:",
+      "ESP": "Descubre más sobre mí:",
+      "CAT": "Descubreix més sobre mí:"
+    }
   }
 
 ]

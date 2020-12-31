@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslatorService } from '../../services/translator.service';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ts : TranslatorService) { }
 
   ngOnInit(): void
   {
 
   }
-
+  getTranslationByID(id: string) : string
+  {
+    return this.ts.getTranslation(id);
+  }
   navigateTo(url:string)
   {
     window.open(url, '_blank');

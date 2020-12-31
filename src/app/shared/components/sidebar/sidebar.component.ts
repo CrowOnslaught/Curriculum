@@ -14,7 +14,7 @@ import { TranslatorService } from '../../services/translator.service';
 export class SidebarComponent implements OnInit{
 
   //Background Music
-  bgm = new Audio("/assets/resources/sounds/PYLOT-The Return.mp3")
+  bgm = new Audio("../../../../assets/resources/sounds/PYLOT-The Return.mp3")
   bgm_volume : number;
 
   mobileQuery: MediaQueryList;
@@ -144,22 +144,22 @@ export class SidebarComponent implements OnInit{
     this.bgm.addEventListener('ended', function()
     {
       this.currentTime = 0;
-        this.play();
+      this.play();
     }, false);
-    this.bgm.play();
-    this.bgm.volume = localStorage.getItem("bgm_muted") == 'true'? 0 : this.bgm.volume;
+    this.bgm.volume = 0;
   }
   onMuteMusic()
   {
     if(this.bgm.volume == 0)
     {
+      if(this.bgm.paused)
+        this.bgm.play();
+
       this.bgm.volume = this.bgm_volume;
-      localStorage.setItem('bgm_muted', 'false');
     }
     else
     {
       this.bgm.volume = 0;
-      localStorage.setItem('bgm_muted', 'true');
     }
   }
   getSliderTickInterval(event : MatSliderChange)
@@ -167,7 +167,9 @@ export class SidebarComponent implements OnInit{
     this.bgm_volume = event.value;
     this.bgm.volume = this.bgm_volume;
     localStorage.setItem('bgm_volume', String(this.bgm.volume));
-    localStorage.setItem('bgm_muted', String(event.value==0));
+
+    if(this.bgm.paused)
+      this.bgm.play();
   }
   //#endregion
 
@@ -203,13 +205,6 @@ export class SidebarComponent implements OnInit{
 
     this.bgm_volume = Number(l_data);
     this.bgm.volume = this.bgm_volume;
-
-    l_data = localStorage.getItem("bgm_muted");
-    if(l_data == null)
-    {
-        l_data = "true";
-        localStorage.setItem("bgm_muted", l_data);
-    }
   }
   //#endregion
 
