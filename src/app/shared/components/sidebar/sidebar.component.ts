@@ -15,6 +15,8 @@ import { TranslatorService } from '../../services/translator.service';
 })
 export class SidebarComponent implements OnInit{
 
+  lightMode : boolean = environment.lightMode;
+
   //Background Music
   bgm = new Audio("https://github.com/CrowOnslaught/Curriculum/blob/master/docs/assets/resources/sounds/PYLOT-TheReturn.mp3?raw=true")
   bgm_volume : number;
@@ -66,6 +68,7 @@ export class SidebarComponent implements OnInit{
     onToogleDarkMode()
     {
       environment.lightMode = !environment.lightMode;
+      this.lightMode = environment.lightMode;
       localStorage.setItem("theme", environment.lightMode? 'light':'dark' );
 
       let r = (document.querySelector(':root') as HTMLElement);
