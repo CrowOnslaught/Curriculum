@@ -203,6 +203,12 @@
 
   @media screen
   {
+
+    .onlyPrinting
+    {
+      display: none;
+    }
+
     @media (max-width:  900px)
     {
       width: 500px;
@@ -248,7 +254,7 @@
               }
               p
               {
-                margin: 0 10px
+                margin: 0 10px;
               }
             }
         }
@@ -303,3 +309,5 @@
     }
   }
 }
+
+

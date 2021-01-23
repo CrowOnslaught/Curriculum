@@ -511,6 +511,41 @@
       "ESP": "Descubre más sobre mí:",
       "CAT": "Descubreix més sobre mí:"
     }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text59",
+      "ENG": "Visit my web page at www.JaumeGarciaCV.cat",
+      "ESP": "Visita mi página web en www.JaumeGarciaCV.cat",
+      "CAT": "Visita la meva pàgina web a www.JaumeGarciaCV.cat"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text60",
+      "ENG": "Showing ToolBar. Press 'P' to hide again",
+      "ESP": "Mostrando barra lateral. Pulsa 'P' para ocultar de nuevo",
+      "CAT": "Mostrant barra lateral. Prem 'P' per ocultar de nou"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text61",
+      "ENG": "Hiding ToolBar. Press 'P' to show again",
+      "ESP": "Ocultando barra lateral. Pulsa 'P' para mostrar de nuevo",
+      "CAT": "Ocultant barra lateral. Prem 'P' per mostrar de nou"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text62",
+      "ENG": "Starting Download",
+      "ESP": "Empezando Descarga",
+      "CAT": "Començant Descàrrega"
+    }
   }
-
 ]

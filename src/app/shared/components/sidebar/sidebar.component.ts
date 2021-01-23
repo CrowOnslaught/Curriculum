@@ -50,11 +50,11 @@ export class SidebarComponent implements OnInit{
 
   toogleHideToolBar()
   {
-    this.horizontalPosition='left';
+    this.horizontalPosition='center';
     if(this.hideMenu)
-      this.openSnackBar("Showing ToolBar. Press 'P' to hide again", "showbar");
+      this.openSnackBar(this.ts.getTranslation('60'), "showbar");
     else
-      this.openSnackBar("Hiding ToolBar. Press 'P' to show again", "hidebar");
+      this.openSnackBar(this.ts.getTranslation('61'), "hidebar");
 
     this.hideMenu = !this.hideMenu;
   }
@@ -116,8 +116,8 @@ export class SidebarComponent implements OnInit{
     l_link.click();
     l_link.remove();
 
-    this.horizontalPosition ='right';
-    this.openSnackBar("Starting Donwload", "showbar");
+    this.horizontalPosition ='center';
+    this.openSnackBar(this.ts.getTranslation('62'), "showbar");
 
   }
 //#endregion
@@ -126,7 +126,7 @@ export class SidebarComponent implements OnInit{
 //#region SnackBar
   openSnackBar(message: string, className: string){
     this.sb.open(message, '', {
-      duration: 2000,
+      duration: 8000,
       panelClass: [className],
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,

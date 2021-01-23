@@ -45,8 +45,8 @@
             <mat-menu id='audio' #audio>
               <mat-slider color='primary' [min]="0" [max]="1" [step]="0.01" [value]='bgm_volume' (input)="getSliderTickInterval($event)"></mat-slider>
               <button mat-menu-item (click)="onMuteMusic()">
-                <mat-icon *ngIf='bgm.volume<=0' class='nav-icon'>volume_up</mat-icon>
-                <mat-icon *ngIf='bgm.volume>0' class='nav-icon'>volume_off</mat-icon>
+                <mat-icon *ngIf='bgm.volume<=0' class='nav-icon'>volume_off</mat-icon>
+                <mat-icon *ngIf='bgm.volume>0' class='nav-icon'>volume_up</mat-icon>
               </button>
             </mat-menu>
 
