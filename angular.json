@@ -153,5 +153,8 @@
       }
     }
   },
-  "defaultProject": "cv-angular"
+  "defaultProject": "cv-angular",
+  "cli": {
+    "analytics": false
+  }
 }

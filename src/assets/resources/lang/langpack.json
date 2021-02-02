@@ -509,7 +509,7 @@
       "id":"text58",
       "ENG": "Explore more about me:",
       "ESP": "Descubre más sobre mí:",
-      "CAT": "Descubreix més sobre mí:"
+      "CAT": "Descobreix més sobre mi:"
     }
   },
   {
@@ -543,9 +543,18 @@
     "lang_key":
     {
       "id":"text62",
-      "ENG": "Starting Download",
-      "ESP": "Empezando Descarga",
-      "CAT": "Començant Descàrrega"
+      "ENG": "Starting Download - English CV",
+      "ESP": "Empezando Descarga - CV Español",
+      "CAT": "Començant Descàrrega - CV Català"
+    }
+  },
+  {
+    "lang_key":
+    {
+      "id":"text63",
+      "ENG": "Final project made by Jordi Enriquez and Jaume Garcia which, by connecting to the thecocktailDB API, we have made a fully functional application for mobile devices, in which you can search for cocktails from the database, filter them, add them to favorites and even create new cocktails locally.\n\nThis project is done in two weeks using Angular and Ionic as Framework and JS, CSS and HTML as main programming languages.",
+      "ESP": "Proyecto final hecho por Jordi Enriquez y Jaume Garcia que, conectándose a la API de thecocktailDB, hemos hecho una aplicación para dispositivos móviles completamente funcional, en la que puedes buscar cócteles de la base de datos, filtrarlos, añadirlos a favoritos y hasta crear nuevos cócteles de forma local.\n\nEste proyecto está realizado en dos semanas utilizando Angular e Ionic como Framework y JS, CSS y HTML como lenguajes de programación principales.",
+      "CAT": "Projecte final fet per Jordi Enriquez i Jaume Garcia que, connectant-se a l'API de thecocktailDB, hem fet una aplicació per a dispositius mòbils completament funcional, en la qual es pot buscar còctels de la base de dades, filtrar-los, afegir-los a favorits i fins i tot crear nous còctels de forma local.\n\nAquest projecte està realitzat en dues setmanes utilitzant Angular i Ionic com Framework i JS, CSS i HTML com a llenguatges de programació principals."
     }
   }
 ]
