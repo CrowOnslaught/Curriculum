@@ -31,7 +31,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 Run `ng build --prod --output-path docs --base-href /` to create build in `docs/`.
 Duplicate `docs/index.html` and rename to `docs/404.html`.
-Add, Commit & Push
+Duplicate CNAME at root and move to `docs/`. 
+Add, Commit & Push.
 
 ## Further help
 

@@ -103,3 +103,8 @@ div.mat-menu-panel
     color:var(--primary-color);
   }
 }
+
+.mat-primary .mat-slider-track-fill, .mat-primary .mat-slider-thumb, .mat-primary .mat-slider-thumb-label{
+  color:var(--primary-color);
+  background-color: var(--primary-color);
+}
