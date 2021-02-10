@@ -498,18 +498,18 @@
     "lang_key":
     {
       "id":"text57",
-      "ENG": "Welcome to my site!",
-      "ESP": "Bienvenido a mi página!",
-      "CAT": "¡Benvingut a la meva pàgina!"
+      "ENG": "Welcome to my website!",
+      "ESP": "¡Bienvenido a mi página web!",
+      "CAT": "¡Benvingut a la meva pàgina web!"
     }
   },
   {
     "lang_key":
     {
       "id":"text58",
-      "ENG": "Explore more about me:",
-      "ESP": "Descubre más sobre mí:",
-      "CAT": "Descobreix més sobre mi:"
+      "ENG": "This web is made completely by me:",
+      "ESP": "Esta web está hecha completamente por mí:",
+      "CAT": "Aquesta web està feta completament per mi:"
     }
   },
   {
