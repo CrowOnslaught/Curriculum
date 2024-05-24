@@ -7,14 +7,14 @@
     height: 1100px;
     max-width: 794px;
 
-    font-size: 1.1em;
+    font-size: 14px;
     margin: auto;
     margin-top: 50px;
     padding: 0;
 
     display:grid;
-    gap: 1%;
-    grid-template-rows: 20% 65% 10%;
+    gap: 8px;
+    grid-template-rows: 17% 68% 10%;
     grid-template-columns: 49.5% 49.5%;
     grid-template-areas:
     "a a"
@@ -27,22 +27,27 @@
         background-color: var(--post-bg-color);
         border-radius: 8px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         >div
         {
-            margin-left: 10px;
-            margin-right: 10px;
+          margin: 16px;
             display: flex;
             justify-content: space-around;
             align-items: center;
             text-align: justify;
 
-            height: 90%;
             >img
             {
-                width: 150px;
-                height: 150px;
+               object-fit: cover;
+               object-position: 0px 0px;
+
+                min-width: 140px;
+                height: 140px;
                 border-radius: 50%;
-                margin-right: 10px;
+                margin-right: 16px;
             }
             >div
             {
@@ -77,28 +82,48 @@
     }
     >main
     {
-        grid-area: b;
+        grid-area: c;
 
         >div#tech
         {
-            height:507px;
+            height: 100%;
+            margin-bottom: 8px;
+
+            ul.tech-skills-list {
+              height: 510px;
+
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              flex-wrap: wrap;
+              flex-direction: column;
+              gap: 4px;
+
+              padding-left: 32px;
+
+              >li{
+                width: fit-content;
+              }
+            }
         }
         >div#soft
         {
-            height: 198px;
+            height: 175px;
         }
     }
     >aside
     {
-        grid-area: c;
+        grid-area: b;
         >div#experience
         {
-            height:390px;
+            height: 100%;
+            margin-bottom: 8px;
         }
         >div#training
         {
-            height: 315px;
+            height: 215px;
         }
+
     }
     div.post
     {
@@ -114,22 +139,30 @@
 
             >h3
             {
+
+              white-space: nowrap;
               font-weight: bold;
-              font-size: 18px;
-              line-height: 1.2em;
-              color:var(--sc-dark);
+              font-size: 16px;
+              line-height: 18px;
+              color: var(--post-title-color);
               background-color: var(--primary-color);
               border-radius: 8px 0 0 0;
-              width: 40%;
-              padding-left: 10px;
+              width: fit-content;
+              padding-left: 8px;
+              padding-right: 16px;
+              padding-top: 2px;
+              padding-bottom: 2px;
               text-align: left;
             }
-            >div
+            >div:first-of-type
             {
-                width: 60%;
+                width: 100%;
                 height: auto;
                 border-bottom: solid 2px var(--primary-color);
+
+                margin-right: 32px;
             }
+      
         }
 
         div.devLang
@@ -157,6 +190,7 @@
 
         &#experience, &#training
         {
+
             >div:not(.postTitle)
             {
                 display: flex;
@@ -166,7 +200,7 @@
                 {
                     align-self:center;
                     background-color: var(--primary-color);
-                    color:var(--sc-dark);
+                    color:var(--post-title-color);
                     font-weight: bold;
                     width: fit-content;
                     padding: 1px 20px 1px 20px;
@@ -176,6 +210,24 @@
                 p.year:first-of-type
                 {
                   margin-top: 5px;
+                }
+
+                ul {
+                  margin-top: 8px;
+                  .experience-label {
+                    margin-left: -16px;
+                    margin-top: 2px;
+
+                    >strong{
+                      font-size: 15px;
+                    }
+
+                   
+                  }
+
+                  li {
+                    margin: 1px 0;
+                  }
                 }
             }
         }
@@ -195,6 +247,7 @@
         height: 100%;
 
         display: flex;
+        gap: 8px;
         justify-content: space-around;
 
         ul
@@ -277,8 +330,10 @@
 
         div.post
         {
+
           >div.postTitle
           {
+
               >h3
               {
                 font-size: 16px;
@@ -327,5 +382,3 @@
     }
   }
 }
-
-

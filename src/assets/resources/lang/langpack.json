@@ -3,7 +3,7 @@
     "lang_key":
     {
       "id":"text01",
-      "ENG": "Web & Game Developer",
+      "ENG": "iOS, Web & Game Developer",
       "ESP": "Desarrollador Web y de Videojuegos",
       "CAT": "Desenvolupador Web i de Videojocs"
     }
@@ -12,8 +12,8 @@
     "lang_key":
     {
       "id":"text02",
-      "ENG": "A fan of video games, rock, manga and card games (TCG's), it motivates me to get involved in projects and feel integrated into them and in the team. I consider myself a calm person who thinks calmly and logically, although I find it difficult to make decisions when I am alone.",
-      "ESP": "Fan de los videojuegos, el rock, el manga y los juegos de cartas (TCG's), me motiva implicarme en proyectos, sentirme integrado en ellos y en el equipo. Me considero una persona tranquila que piensa de forma calmada y lógica, aunque me cuesta tomar decisiones cuando estoy solo.",
+      "ENG": "A fan of video games, rock, manga and card games (TCG's), it motivates me to get involved in projects and feel integrated into them and in the team. I consider myself a calm person who thinks calmly and logically, used to fending for myself.",
+      "ESP": "Fan de los videojuegos, el rock, el manga y los juegos de cartas (TCG's), me motiva implicarme en proyectos, sentirme integrado en ellos y en el equipo. Me considero una persona tranquila que piensa de forma calmada y lógica, acostumbrado a sacarse las castañas del fuego por sí mismo.",
       "CAT": "Fan dels videojocs, el rock, el manga i els jocs de cartes (TCG's), em motiva implicar-me en projectes i sentir-me integrat en ells i en l'equip. Em considero una persona tranquil·la que pensa de forma calmada i lògica, encara que em costa prendre decisions quan estic sol."
     }
   },
@@ -21,7 +21,7 @@
     "lang_key":
     {
       "id":"text03",
-      "ENG": "TECH SKILLS",
+      "ENG": "Tech skills",
       "ESP": "HABILIDADES TÉCNICAS",
       "CAT": "HABILITATS TÈCNIQUES"
     }
@@ -57,7 +57,7 @@
     "lang_key":
     {
       "id":"text07",
-      "ENG": "SOFT SKILLS",
+      "ENG": "Soft skills",
       "ESP": "COMPETENCIAS",
       "CAT": "COMPETÈNCIES"
     }
@@ -111,7 +111,7 @@
     "lang_key":
     {
       "id":"text13",
-      "ENG": "Self-control",
+      "ENG": "Adaptability",
       "ESP": "Autocontrol",
       "CAT": "Autocontrol"
     }
@@ -120,7 +120,7 @@
     "lang_key":
     {
       "id":"text14",
-      "ENG": "PROFESSIONAL EXPERIENCE",
+      "ENG": "Professional experience",
       "ESP": "EXPERIENCIA PROFESIONAL",
       "CAT": "EXPERIÈNCIA PROFESSIONAL"
     }
@@ -129,7 +129,7 @@
     "lang_key":
     {
       "id":"text15",
-      "ENG": "Junior Game Developer:",
+      "ENG": "GiantFox - Junior Game Developer",
       "ESP": "Desarrollador junior de videojuegos:",
       "CAT": "Desenvolupador junior de videojocs:"
     }
@@ -183,7 +183,7 @@
     "lang_key":
     {
       "id":"text22",
-      "ENG": "ACADEMIC TRAINING",
+      "ENG": "Education",
       "ESP": "ESTUDIOS",
       "CAT": "ESTUDIS"
     }
@@ -246,7 +246,7 @@
     "lang_key":
     {
       "id":"text29",
-      "ENG": "LANGUAGES",
+      "ENG": "Language Skills",
       "ESP": "IDIOMAS",
       "CAT": "IDIOMES"
     }
@@ -300,7 +300,7 @@
     "lang_key":
     {
       "id":"text35",
-      "ENG": "CONTACT",
+      "ENG": "Contact",
       "ESP": "CONTACTO",
       "CAT": "CONTACTE"
     }

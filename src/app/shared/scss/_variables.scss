@@ -1,8 +1,8 @@
 :root
 {
-  --pc-dark: GoldenRod;
-  --sc-dark: LightGoldenRodYellow;
-  --pbc-dark: rgba(37, 37, 34, 0.8);
+  --pc-dark: #99EDC3; 
+  --sc-dark: rgb(251, 251, 251);
+  --pbc-dark: rgba(57, 58, 56, 0.8);
 
   --pc-light: DarkGoldenRod;
   --sc-light: Black;
@@ -11,4 +11,5 @@
   --primary-color : var(--pc-dark);
   --secondary-color: var(--sc-dark);
   --post-bg-color: var(--pbc-dark);
+  --post-title-color: rgb(1, 48, 1);
 }
