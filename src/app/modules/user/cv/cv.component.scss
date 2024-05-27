@@ -101,8 +101,15 @@
 
               padding-left: 32px;
 
+              >hr {
+                width: 140px; 
+                margin-left: -0px;
+                border-color: var(--primary-color);
+
+              }
+
               >li{
-                width: fit-content;
+                width: 160px;
               }
             }
         }
@@ -153,6 +160,7 @@
               padding-top: 2px;
               padding-bottom: 2px;
               text-align: left;
+              border-bottom: solid 2px var(--primary-color);
             }
             >div:first-of-type
             {
@@ -237,6 +245,12 @@
             >div
             {
                 margin-bottom: 10px;
+            }
+
+            div:not(.postTitle) {
+              h3 {
+                font-size: 14px;
+              }
             }
         }
     }

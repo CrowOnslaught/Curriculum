@@ -51,10 +51,10 @@ export class SidebarComponent implements OnInit{
   toogleHideToolBar()
   {
     this.horizontalPosition='center';
-    if(this.hideMenu)
-      this.openSnackBar(this.ts.getTranslation('60'), "showbar");
-    else
-      this.openSnackBar(this.ts.getTranslation('61'), "hidebar");
+    // if(this.hideMenu)
+    //   this.openSnackBar(this.ts.getTranslation('60'), "showbar");
+    // else
+    //   this.openSnackBar(this.ts.getTranslation('61'), "hidebar");
 
     this.hideMenu = !this.hideMenu;
   }

@@ -84,7 +84,7 @@
     "lang_key":
     {
       "id":"text10",
-      "ENG": "Technology orientation",
+      "ENG": "Team Collaboration",
       "ESP": "Orientación a la tecnología",
       "CAT": "Orientació a la tecnologia"
     }
@@ -93,7 +93,7 @@
     "lang_key":
     {
       "id":"text11",
-      "ENG": "Motivation",
+      "ENG": "User orientation",
       "ESP": "Motivación",
       "CAT": "Motivació"
     }
@@ -192,7 +192,7 @@
     "lang_key":
     {
       "id":"text23",
-      "ENG": "FrontEnd Developing BootCamp [490h]",
+      "ENG": "FrontEnd Developing BootCamp",
       "ESP": "Curso de Programación FrontEnd [490h]",
       "CAT": "Curs de Programació FrontEnd [490h]"
     }
@@ -291,7 +291,7 @@
     "lang_key":
     {
       "id":"text34",
-      "ENG": "B2 Level by TecnoCampus",
+      "ENG": "Professional working proficiency | B2",
       "ESP": "Nivel B2 por TecnoCampus",
       "CAT": "Nivell B2 per TecnoCampus"
     }
